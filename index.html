@@ -1,0 +1,86 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoutineBuddy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="srAnnounce" aria-live="assertive" class="sr-only"></div>
+
+  <div class="container">
+    <header>
+      <h1>RoutineBuddy</h1>
+      <p>A calm daily-routine assistant that speaks reminders aloud and gently reminds
+        again — built for people who need extra support staying independent.</p>
+    </header>
+
+    <!-- demo clock control -->
+    <section class="card clock-box">
+      <div class="clock-top">
+        <div class="clock-time">
+          <span id="timeDisplay">8:00 AM</span>
+          <span class="clock-hint">(demo clock — scrub or play to preview reminders)</span>
+        </div>
+        <div class="clock-buttons">
+          <button id="playBtn" class="btn btn-primary">▶ Play</button>
+          <button id="nowBtn" class="btn btn-soft">⟲ Now</button>
+        </div>
+      </div>
+      <input type="range" id="timeSlider" min="0" max="1439" value="480">
+    </section>
+
+    <!-- spotlight -->
+    <section id="spotlight"></section>
+
+    <!-- upcoming -->
+    <section>
+      <h2>Upcoming today</h2>
+      <div id="upcoming" class="stack"></div>
+    </section>
+
+    <!-- completed -->
+    <section id="completedSection" style="display:none;">
+      <h2>Done today</h2>
+      <div id="completed" class="stack"></div>
+    </section>
+
+    <!-- add new task -->
+    <section class="card">
+      <h2>Add a routine step</h2>
+      <div class="add-form">
+        <div>
+          <label for="newTime">Time</label>
+          <input type="time" id="newTime" value="08:00">
+        </div>
+        <div>
+          <label for="newEmoji">Icon</label>
+          <select id="newEmoji">
+            <option value="💊">💊</option>
+            <option value="🍽️">🍽️</option>
+            <option value="🚿">🚿</option>
+            <option value="📅">📅</option>
+            <option value="🚶">🚶</option>
+            <option value="💧">💧</option>
+            <option value="🛏️">🛏️</option>
+            <option value="📝" selected>📝</option>
+          </select>
+        </div>
+        <div class="add-label">
+          <label for="newLabel">What needs doing</label>
+          <input type="text" id="newLabel" placeholder="e.g. Take blood pressure medicine">
+        </div>
+        <button id="addBtn" class="btn btn-primary">+ Add</button>
+      </div>
+    </section>
+
+    <footer>
+      <p>Built with the free browser Speech Synthesis API — no paid tools or accounts required.</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>Codex

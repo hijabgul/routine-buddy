@@ -1,0 +1,376 @@
+﻿git : 13:36:59.223522 exec-cmd.c:266          trace: resolved executable dir: 
+C:/Program Files/Git/mingw64/bin
+At line:1 char:48
++ ... 1'; $env:GIT_CURL_VERBOSE='1'; git push -u origin master 2>&1 | Out-F ...
++                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (13:36:59.223522...Git/mingw64/bin 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+13:36:59.263979 git.c:502               trace: built-in: git push -u origin 
+master
+13:36:59.263979 run-command.c:674       trace: run_command: GIT_DIR=.git git 
+remote-https origin https://github.com/hijabgul/routine-buddy.git
+13:36:59.263979 run-command.c:935       trace: start_command: git remote-https 
+origin https://github.com/hijabgul/routine-buddy.git
+13:36:59.291118 exec-cmd.c:266          trace: resolved executable dir: 
+C:/Program Files/Git/mingw64/libexec/git-core
+13:36:59.329197 git.c:809               trace: exec: git-remote-https origin 
+https://github.com/hijabgul/routine-buddy.git
+13:36:59.329197 run-command.c:674       trace: run_command: git-remote-https 
+origin https://github.com/hijabgul/routine-buddy.git
+13:36:59.329197 run-command.c:935       trace: start_command: git-remote-https 
+origin https://github.com/hijabgul/routine-buddy.git
+13:36:59.353196 exec-cmd.c:266          trace: resolved executable dir: 
+C:/Program Files/Git/mingw64/libexec/git-core
+13:36:59.394445 http.c:915              == Info: Couldn't find host github.com 
+in the .netrc file; using defaults
+13:36:59.419094 http.c:915              == Info: Host github.com:443 was 
+resolved.
+13:36:59.419198 http.c:915              == Info: IPv6: (none)
+13:36:59.419198 http.c:915              == Info: IPv4: 20.207.73.82
+13:36:59.419330 http.c:915              == Info:   Trying 20.207.73.82:443...
+13:36:59.495949 http.c:915              == Info: schannel: disabled automatic 
+use of client certificate
+13:36:59.495949 http.c:915              == Info: ALPN: curl offers http/1.1
+13:36:59.678515 http.c:915              == Info: ALPN: server accepted http/1.1
+13:36:59.678515 http.c:915              == Info: Established connection to 
+github.com (20.207.73.82 port 443) from 192.168.18.8 port 53063 
+13:36:59.678515 http.c:915              == Info: using HTTP/1.x
+13:36:59.678515 http.c:862              => Send header, 0000000204 bytes 
+(0x000000cc)
+13:36:59.678515 http.c:874              => Send header: GET 
+/hijabgul/routine-buddy.git/info/refs?service=git-receive-pack HTTP/1.1
+13:36:59.678515 http.c:874              => Send header: Host: github.com
+13:36:59.678515 http.c:874              => Send header: User-Agent: 
+git/2.52.0.windows.1
+13:36:59.678515 http.c:874              => Send header: Accept: */*
+13:36:59.678515 http.c:874              => Send header: Accept-Encoding: 
+deflate, gzip, br, zstd
+13:36:59.678515 http.c:874              => Send header: Pragma: no-cache
+13:36:59.678515 http.c:874              => Send header:
+13:36:59.678515 http.c:915              == Info: Request completely sent off
+13:36:59.966914 http.c:862              <= Recv header, 0000000027 bytes 
+(0x0000001b)
+13:36:59.966914 http.c:874              <= Recv header: HTTP/1.1 401 
+Unauthorized
+13:36:59.966914 http.c:862              <= Recv header, 0000000026 bytes 
+(0x0000001a)
+13:36:59.966914 http.c:874              <= Recv header: Server: 
+GitHub-Babel/3.0
+13:36:59.966914 http.c:862              <= Recv header, 0000000054 bytes 
+(0x00000036)
+13:36:59.966914 http.c:874              <= Recv header: 
+Content-Security-Policy: default-src 'none'; sandbox
+13:36:59.966914 http.c:862              <= Recv header, 0000000041 bytes 
+(0x00000029)
+13:36:59.966914 http.c:874              <= Recv header: Content-Type: 
+text/plain; charset=UTF-8
+13:36:59.966914 http.c:862              <= Recv header, 0000000040 bytes 
+(0x00000028)
+13:36:59.966914 http.c:874              <= Recv header: www-authenticate: 
+Basic realm="GitHub"
+13:36:59.966914 http.c:862              <= Recv header, 0000000020 bytes 
+(0x00000014)
+13:36:59.966914 http.c:874              <= Recv header: Content-Length: 26
+13:36:59.966914 http.c:862              <= Recv header, 0000000037 bytes 
+(0x00000025)
+13:36:59.966914 http.c:874              <= Recv header: Date: Tue, 14 Jul 2026 
+08:38:48 GMT
+13:36:59.966914 http.c:862              <= Recv header, 0000000023 bytes 
+(0x00000017)
+13:36:59.966914 http.c:874              <= Recv header: X-Frame-Options: DENY
+13:36:59.966914 http.c:862              <= Recv header, 0000000073 bytes 
+(0x00000049)
+13:36:59.966914 http.c:874              <= Recv header: 
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+13:36:59.966914 http.c:862              <= Recv header, 0000000057 bytes 
+(0x00000039)
+13:36:59.966914 http.c:874              <= Recv header: X-GitHub-Request-Id: 
+86F2:24CD22:9FFCC5:B01DF6:6A55F597
+13:36:59.966914 http.c:862              <= Recv header, 0000000002 bytes 
+(0x00000002)
+13:36:59.966914 http.c:874              <= Recv header:
+13:36:59.966914 http.c:915              == Info: Connection #0 to host 
+github.com:443 left intact
+13:36:59.966914 run-command.c:674       trace: run_command: 'git 
+credential-manager get'
+13:36:59.966914 run-command.c:935       trace: start_command: 'C:/Program 
+Files/Git/usr/bin/sh.exe' -c 'git credential-manager get' 'git 
+credential-manager get'
+13:37:00.136464 exec-cmd.c:266          trace: resolved executable dir: 
+C:/Program Files/Git/mingw64/libexec/git-core
+13:37:00.184460 git.c:809               trace: exec: git-credential-manager get
+13:37:00.192459 run-command.c:674       trace: run_command: 
+git-credential-manager get
+13:37:00.192459 run-command.c:935       trace: start_command: 
+git-credential-manager get
+13:37:00.840402 exec-cmd.c:266          trace: resolved executable dir: 
+C:/Program Files/Git/mingw64/libexec/git-core
+13:37:00.880400 git.c:502               trace: built-in: git config --null 
+--list
+13:37:01.769383 http.c:915              == Info: Reusing existing https: 
+connection with host github.com
+13:37:01.769383 http.c:915              == Info: Server auth using Basic with 
+user 'hijabgul'
+13:37:01.769383 http.c:862              => Send header, 0000000295 bytes 
+(0x00000127)
+13:37:01.769383 http.c:874              => Send header: GET 
+/hijabgul/routine-buddy.git/info/refs?service=git-receive-pack HTTP/1.1
+13:37:01.769383 http.c:874              => Send header: Host: github.com
+13:37:01.769383 http.c:874              => Send header: Authorization: Basic 
+<redacted>
+13:37:01.769383 http.c:874              => Send header: User-Agent: 
+git/2.52.0.windows.1
+13:37:01.769383 http.c:874              => Send header: Accept: */*
+13:37:01.769383 http.c:874              => Send header: Accept-Encoding: 
+deflate, gzip, br, zstd
+13:37:01.769383 http.c:874              => Send header: Pragma: no-cache
+13:37:01.769383 http.c:874              => Send header:
+13:37:01.769383 http.c:915              == Info: Request completely sent off
+13:37:02.819872 http.c:862              <= Recv header, 0000000017 bytes 
+(0x00000011)
+13:37:02.819872 http.c:874              <= Recv header: HTTP/1.1 200 OK
+13:37:02.819872 http.c:862              <= Recv header, 0000000026 bytes 
+(0x0000001a)
+13:37:02.819872 http.c:874              <= Recv header: Server: 
+GitHub-Babel/3.0
+13:37:02.819872 http.c:862              <= Recv header, 0000000060 bytes 
+(0x0000003c)
+13:37:02.819872 http.c:874              <= Recv header: Content-Type: 
+application/x-git-receive-pack-advertisement
+13:37:02.819872 http.c:862              <= Recv header, 0000000054 bytes 
+(0x00000036)
+13:37:02.819872 http.c:874              <= Recv header: 
+Content-Security-Policy: default-src 'none'; sandbox
+13:37:02.819872 http.c:862              <= Recv header, 0000000040 bytes 
+(0x00000028)
+13:37:02.819872 http.c:874              <= Recv header: expires: Fri, 01 Jan 
+1980 00:00:00 GMT
+13:37:02.819872 http.c:862              <= Recv header, 0000000018 bytes 
+(0x00000012)
+13:37:02.819872 http.c:874              <= Recv header: pragma: no-cache
+13:37:02.819872 http.c:862              <= Recv header, 0000000053 bytes 
+(0x00000035)
+13:37:02.819872 http.c:874              <= Recv header: Cache-Control: 
+no-cache, max-age=0, must-revalidate
+13:37:02.819872 http.c:862              <= Recv header, 0000000023 bytes 
+(0x00000017)
+13:37:02.819872 http.c:874              <= Recv header: Vary: Accept-Encoding
+13:37:02.819872 http.c:862              <= Recv header, 0000000028 bytes 
+(0x0000001c)
+13:37:02.819872 http.c:874              <= Recv header: Transfer-Encoding: 
+chunked
+13:37:02.819872 http.c:862              <= Recv header, 0000000037 bytes 
+(0x00000025)
+13:37:02.819872 http.c:874              <= Recv header: Date: Tue, 14 Jul 2026 
+08:38:51 GMT
+13:37:02.819872 http.c:862              <= Recv header, 0000000023 bytes 
+(0x00000017)
+13:37:02.819872 http.c:874              <= Recv header: X-Frame-Options: DENY
+13:37:02.819872 http.c:862              <= Recv header, 0000000073 bytes 
+(0x00000049)
+13:37:02.819872 http.c:874              <= Recv header: 
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+13:37:02.819872 http.c:862              <= Recv header, 0000000057 bytes 
+(0x00000039)
+13:37:02.819872 http.c:874              <= Recv header: X-GitHub-Request-Id: 
+86F2:24CD22:A00033:B02228:6A55F598
+13:37:02.819872 http.c:862              <= Recv header, 0000000002 bytes 
+(0x00000002)
+13:37:02.819872 http.c:874              <= Recv header:
+13:37:02.819872 http.c:915              == Info: Connection #0 to host 
+github.com:443 left intact
+13:37:02.819872 run-command.c:674       trace: run_command: 'git 
+credential-manager store'
+13:37:02.819872 run-command.c:935       trace: start_command: 'C:/Program 
+Files/Git/usr/bin/sh.exe' -c 'git credential-manager store' 'git 
+credential-manager store'
+13:37:02.928531 exec-cmd.c:266          trace: resolved executable dir: 
+C:/Program Files/Git/mingw64/libexec/git-core
+13:37:02.944629 git.c:809               trace: exec: git-credential-manager 
+store
+13:37:02.944629 run-command.c:674       trace: run_command: 
+git-credential-manager store
+13:37:02.944629 run-command.c:935       trace: start_command: 
+git-credential-manager store
+13:37:03.159498 exec-cmd.c:266          trace: resolved executable dir: 
+C:/Program Files/Git/mingw64/libexec/git-core
+13:37:03.184724 git.c:502               trace: built-in: git config --null 
+--list
+13:37:03.636640 run-command.c:674       trace: run_command: git send-pack 
+--stateless-rpc --helper-status --thin --no-progress 
+https://github.com/hijabgul/routine-buddy.git/ --stdin
+13:37:03.644642 run-command.c:935       trace: start_command: git send-pack 
+--stateless-rpc --helper-status --thin --no-progress 
+https://github.com/hijabgul/routine-buddy.git/ --stdin
+13:37:03.663841 exec-cmd.c:266          trace: resolved executable dir: 
+C:/Program Files/Git/mingw64/libexec/git-core
+13:37:03.696370 git.c:502               trace: built-in: git send-pack 
+--stateless-rpc --helper-status --thin --no-progress 
+https://github.com/hijabgul/routine-buddy.git/ --stdin
+13:37:03.696370 run-command.c:674       trace: run_command: git pack-objects 
+--all-progress-implied --revs --stdout --thin --delta-base-offset -q
+13:37:03.696370 run-command.c:935       trace: start_command: git pack-objects 
+--all-progress-implied --revs --stdout --thin --delta-base-offset -q
+13:37:03.729942 exec-cmd.c:266          trace: resolved executable dir: 
+C:/Program Files/Git/mingw64/libexec/git-core
+13:37:03.746320 git.c:502               trace: built-in: git pack-objects 
+--all-progress-implied --revs --stdout --thin --delta-base-offset -q
+13:41:21.928233 http.c:915              == Info: Too old connection (259114 ms 
+idle, max idle is 118000 ms), disconnect it
+13:41:21.928233 http.c:915              == Info: Connection 0 seems to be dead
+13:41:21.928233 http.c:915              == Info: shutting down connection #0
+13:41:21.936349 http.c:915              == Info: NTLM-proxy picked AND auth 
+done set, clear picked
+13:41:21.936349 http.c:915              == Info: Hostname in DNS cache was 
+stale, zapped
+13:41:21.979609 http.c:915              == Info: Host github.com:443 was 
+resolved.
+13:41:21.979609 http.c:915              == Info: IPv6: (none)
+13:41:21.979609 http.c:915              == Info: IPv4: 20.207.73.82
+13:41:21.979609 http.c:915              == Info:   Trying 20.207.73.82:443...
+13:41:22.054039 http.c:915              == Info: ALPN: curl offers http/1.1
+13:41:22.209208 http.c:915              == Info: ALPN: server accepted http/1.1
+13:41:22.209208 http.c:915              == Info: Established connection to 
+github.com (20.207.73.82 port 443) from 192.168.18.8 port 53120 
+13:41:22.209208 http.c:915              == Info: using HTTP/1.x
+13:41:22.209208 http.c:915              == Info: Server auth using Basic with 
+user 'hijabgul'
+13:41:22.209208 http.c:862              => Send header, 0000000325 bytes 
+(0x00000145)
+13:41:22.209208 http.c:874              => Send header: POST 
+/hijabgul/routine-buddy.git/git-receive-pack HTTP/1.1
+13:41:22.209208 http.c:874              => Send header: Host: github.com
+13:41:22.209208 http.c:874              => Send header: Authorization: Basic 
+<redacted>
+13:41:22.209208 http.c:874              => Send header: User-Agent: 
+git/2.52.0.windows.1
+13:41:22.209208 http.c:874              => Send header: Content-Type: 
+application/x-git-receive-pack-request
+13:41:22.209208 http.c:874              => Send header: Accept: 
+application/x-git-receive-pack-result
+13:41:22.209208 http.c:874              => Send header: Content-Length: 4
+13:41:22.209208 http.c:874              => Send header:
+13:41:22.209208 http.c:915              == Info: upload completely sent off: 4 
+bytes
+13:41:22.646204 http.c:862              <= Recv header, 0000000017 bytes 
+(0x00000011)
+13:41:22.646204 http.c:874              <= Recv header: HTTP/1.1 200 OK
+13:41:22.646204 http.c:862              <= Recv header, 0000000026 bytes 
+(0x0000001a)
+13:41:22.646204 http.c:874              <= Recv header: Server: 
+GitHub-Babel/3.0
+13:41:22.646204 http.c:862              <= Recv header, 0000000053 bytes 
+(0x00000035)
+13:41:22.646204 http.c:874              <= Recv header: Content-Type: 
+application/x-git-receive-pack-result
+13:41:22.646204 http.c:862              <= Recv header, 0000000054 bytes 
+(0x00000036)
+13:41:22.646204 http.c:874              <= Recv header: 
+Content-Security-Policy: default-src 'none'; sandbox
+13:41:22.646204 http.c:862              <= Recv header, 0000000040 bytes 
+(0x00000028)
+13:41:22.646204 http.c:874              <= Recv header: expires: Fri, 01 Jan 
+1980 00:00:00 GMT
+13:41:22.646204 http.c:862              <= Recv header, 0000000018 bytes 
+(0x00000012)
+13:41:22.646204 http.c:874              <= Recv header: pragma: no-cache
+13:41:22.646204 http.c:862              <= Recv header, 0000000053 bytes 
+(0x00000035)
+13:41:22.646204 http.c:874              <= Recv header: Cache-Control: 
+no-cache, max-age=0, must-revalidate
+13:41:22.646204 http.c:862              <= Recv header, 0000000023 bytes 
+(0x00000017)
+13:41:22.646204 http.c:874              <= Recv header: Vary: Accept-Encoding
+13:41:22.646204 http.c:862              <= Recv header, 0000000019 bytes 
+(0x00000013)
+13:41:22.646204 http.c:874              <= Recv header: Content-Length: 0
+13:41:22.646204 http.c:862              <= Recv header, 0000000037 bytes 
+(0x00000025)
+13:41:22.646204 http.c:874              <= Recv header: Date: Tue, 14 Jul 2026 
+08:43:10 GMT
+13:41:22.646204 http.c:862              <= Recv header, 0000000023 bytes 
+(0x00000017)
+13:41:22.646204 http.c:874              <= Recv header: X-Frame-Options: DENY
+13:41:22.646204 http.c:862              <= Recv header, 0000000073 bytes 
+(0x00000049)
+13:41:22.646204 http.c:874              <= Recv header: 
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+13:41:22.646204 http.c:862              <= Recv header, 0000000057 bytes 
+(0x00000039)
+13:41:22.646204 http.c:874              <= Recv header: X-GitHub-Request-Id: 
+8238:2D348A:A1F57A:B23366:6A55F69E
+13:41:22.646204 http.c:862              <= Recv header, 0000000002 bytes 
+(0x00000002)
+13:41:22.646204 http.c:874              <= Recv header:
+13:41:22.646204 http.c:915              == Info: Connection #1 to host 
+github.com:443 left intact
+13:41:22.646204 http.c:915              == Info: Reusing existing https: 
+connection with host github.com
+13:41:22.646204 http.c:915              == Info: Server auth using Basic with 
+user 'hijabgul'
+13:41:22.654203 http.c:862              => Send header, 0000000376 bytes 
+(0x00000178)
+13:41:22.654203 http.c:874              => Send header: POST 
+/hijabgul/routine-buddy.git/git-receive-pack HTTP/1.1
+13:41:22.654203 http.c:874              => Send header: Host: github.com
+13:41:22.654203 http.c:874              => Send header: Authorization: Basic 
+<redacted>
+13:41:22.654203 http.c:874              => Send header: User-Agent: 
+git/2.52.0.windows.1
+13:41:22.654203 http.c:874              => Send header: Accept-Encoding: 
+deflate, gzip, br, zstd
+13:41:22.654203 http.c:874              => Send header: Transfer-Encoding: 
+chunked
+13:41:22.654203 http.c:874              => Send header: Content-Type: 
+application/x-git-receive-pack-request
+13:41:22.654203 http.c:874              => Send header: Accept: 
+application/x-git-receive-pack-result
+13:41:22.654203 http.c:874              => Send header:
+13:42:26.023286 http.c:862              <= Recv header, 0000000030 bytes 
+(0x0000001e)
+13:42:26.023286 http.c:874              <= Recv header: HTTP/1.1 408 Request 
+Timeout
+13:42:26.023286 http.c:862              <= Recv header, 0000000026 bytes 
+(0x0000001a)
+13:42:26.023286 http.c:874              <= Recv header: Server: 
+GitHub-Babel/3.0
+13:42:26.023286 http.c:862              <= Recv header, 0000000054 bytes 
+(0x00000036)
+13:42:26.023286 http.c:874              <= Recv header: 
+Content-Security-Policy: default-src 'none'; sandbox
+13:42:26.023286 http.c:862              <= Recv header, 0000000041 bytes 
+(0x00000029)
+13:42:26.023286 http.c:874              <= Recv header: Content-Type: 
+text/plain; charset=UTF-8
+13:42:26.023286 http.c:862              <= Recv header, 0000000019 bytes 
+(0x00000013)
+13:42:26.023286 http.c:874              <= Recv header: Content-Length: 0
+13:42:26.023286 http.c:862              <= Recv header, 0000000037 bytes 
+(0x00000025)
+13:42:26.023286 http.c:874              <= Recv header: Date: Tue, 14 Jul 2026 
+08:44:14 GMT
+13:42:26.023286 http.c:862              <= Recv header, 0000000023 bytes 
+(0x00000017)
+13:42:26.023286 http.c:874              <= Recv header: X-Frame-Options: DENY
+13:42:26.023286 http.c:862              <= Recv header, 0000000073 bytes 
+(0x00000049)
+13:42:26.023286 http.c:874              <= Recv header: 
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+13:42:26.023286 http.c:862              <= Recv header, 0000000057 bytes 
+(0x00000039)
+13:42:26.023286 http.c:874              <= Recv header: X-GitHub-Request-Id: 
+8238:2D348A:A1F642:B23449:6A55F69F
+13:42:26.023286 http.c:915              == Info: HTTP error before end of 
+send, stop sending
+13:42:26.023286 http.c:915              == Info: abort upload after having 
+sent 71009944 bytes
+13:42:26.023286 http.c:862              <= Recv header, 0000000002 bytes 
+(0x00000002)
+13:42:26.023286 http.c:874              <= Recv header:
+13:42:26.023286 http.c:915              == Info: shutting down connection #1
+error: RPC failed; HTTP 408 curl 22 The requested URL returned error: 408
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Everything up-to-date
