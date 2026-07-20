@@ -1,5 +1,7 @@
 # 🚀 Routine Buddy
-
+LIVE APP LIK
+ 
+routine-buddy-chi.vercel.app
 <div align="center">
 
 <!-- TODO: Add project logo (e.g., a simple task list icon) -->
